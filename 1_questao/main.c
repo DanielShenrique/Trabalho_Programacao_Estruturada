@@ -18,12 +18,13 @@ int main(){
 
     for(i = 0; i <= 4; i++){
         system("cls");
+        fflush(stdin);
         printf("Digite o nome da %i pessoa:\n", i+1);
-        scanf("%s%*c", &p[i].nome);
+        scanf("%s", &p[i].nome);
         printf("Digite o peso da %i pessoa:\n", i+1);
-        scanf("%f%*c", &p[i].peso);
+        scanf("%f", &p[i].peso);
         printf("Digite a altura da %i pessoa:\n", i+1);
-        scanf("%f%*c", &p[i].altura);
+        scanf("%f", &p[i].altura);
 
         p[i].imcPessoal = IMC(p[i].peso, p[i].altura);
     }
